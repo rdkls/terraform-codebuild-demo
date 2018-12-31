@@ -11,9 +11,8 @@ terraform {
 provider "aws" {
   region = "ap-southeast-2"
 
-  assume_role {
-    role_arn = "arn:aws:iam::566134440840:role/OrganizationAccountAccessRole"
-
-    #role_arn = "arn:aws:iam::566134440840:role/ADFS-Administrator"
-  }
+  #assume_role {
+  #role_arn = "arn:aws:iam::566134440840:role/OrganizationAccountAccessRole"
+  #role_arn = "arn:aws:iam::566134440840:role/ADFS-Administrator"
+  #}
 }
