@@ -8,6 +8,9 @@ The welcome friend, to the World of Tomorrow
 
 # Usage
 
+Recommended to fork this repo for yourself, point the CodePipeline to that, so
+you have control over it!
+
 `make deploy` will deploy basic CodePipeline
 
 CodePipeline consists of 

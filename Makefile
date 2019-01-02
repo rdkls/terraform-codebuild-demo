@@ -9,7 +9,7 @@ deploy: cfn-create-or-update
 		--stack-name test-tf-codebuild \
 		--template-body file://cfn/pipeline.yml \
 		--parameters \
-			ParameterKey=GithubOauthToken,ParameterValue=98594fb96ff68cc1fb5950ed8fcc9dc288793f2b \
+			ParameterKey=GithubOauthToken,ParameterValue=XXX_CHANGE_THIS_XXX \
 			ParameterKey=GithubRepoOwner,ParameterValue=rdkls \
 			ParameterKey=GithubRepoName,ParameterValue=terraform-codebuild-demo \
 			ParameterKey=GithubRepoBranch,ParameterValue=master \
