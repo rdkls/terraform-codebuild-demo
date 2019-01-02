@@ -4,6 +4,8 @@ Sets up CodePipeline, triggered from webook in a GitHub repo with Terraform scri
 that a push to the repo causes the Pipeline to run `terraform apply` with the
 new code.
 
+![architecture](doc/architecture.png)
+
 # Usage
 
 Recommended to fork this repo for yourself, point the CodePipeline to that, so
