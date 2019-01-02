@@ -15,3 +15,5 @@ deploy: cfn-create-or-update
 			ParameterKey=GithubRepoBranch,ParameterValue=master \
 		--capabilities CAPABILITY_IAM
 
+destroy:
+	aws cloudformation delete-stack --stack-name test-tf-codebuild --region ap-southeast-2
