@@ -1,10 +1,8 @@
 # Terraform with CodePipeline
 
-Are you tired of running Jenkins?
-
-Do you want git-driven infra?
-
-The welcome friend, to the World of Tomorrow
+Sets up CodePipeline, triggered from webook in a GitHub repo with Terraform scripts, such
+that a push to the repo causes the Pipeline to run `terraform apply` with the
+new code.
 
 # Usage
 
