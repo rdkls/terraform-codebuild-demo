@@ -27,7 +27,7 @@ Parameters:
   TerraformStateBucketName:
     Type: String
     Default: 566134440840-intelematics-infrastructure-tfstate-npd-test
-    Description: The name of the s3 bucket for TF state
+    Description: The name of the s3 bucket for TF state - NOTE this is also hardcoded in tf/main.yml - change that too
 
 Metadata:
   AWS::CloudFormation::Interface:
