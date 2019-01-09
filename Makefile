@@ -21,5 +21,4 @@ destroy:
 		--profile saml \
 		--stack-name test-tf-codebuild \
 		--region ap-southeast-2
-	aws s3 rb --profile saml s3://npd-test-tf-created-no2
-	aws s3 rb --profile saml s3://npd-test-tf-created-no3
+	echo "aws s3 rb --profile saml s3://npd-test-tf-created-no2"
