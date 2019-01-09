@@ -24,6 +24,10 @@ Parameters:
     Type: String
     Default: 94504f4a67bad612b5c8e3a4b7ce6ca2772b3c1559630dfd71e9c519e3d6149c
     Description: HASHICORP - Y U NO PACKAGE REPOSITORY
+  TerraformStateBucketName:
+    Type: String
+    Default: 566134440840-intelematics-infrastructure-tfstate-npd-test
+    Description: The name of the s3 bucket for TF state
 
 Metadata:
   AWS::CloudFormation::Interface:
@@ -44,6 +48,7 @@ Resources:
   TerraformStateBucket:
     Type: AWS::S3::Bucket
     Properties:
+      BucketName: !Ref TerraformStateBucketName
       VersioningConfiguration:
         Status: Enabled
   ArtifactStoreBucket:
