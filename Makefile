@@ -5,6 +5,7 @@ cfn-create-or-update:
 deploy: cfn-create-or-update
 	#aws cloudformation create-stack  # switched to cfn-create-or-update to allow idempotent
 	npx cfn-create-or-update \
+		--profile saml \
 		--region ap-southeast-2 \
 		--stack-name test-tf-codebuild \
 		--template-body file://cfn/pipeline.yml \
@@ -16,4 +17,9 @@ deploy: cfn-create-or-update
 		--capabilities CAPABILITY_IAM
 
 destroy:
-	aws cloudformation delete-stack --stack-name test-tf-codebuild --region ap-southeast-2
+	aws cloudformation delete-stack \
+		--profile saml \
+		--stack-name test-tf-codebuild \
+		--region ap-southeast-2
+	aws s3 rb --profile saml s3://npd-test-tf-created-no2
+	aws s3 rb --profile saml s3://npd-test-tf-created-no3
